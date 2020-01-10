@@ -1,12 +1,12 @@
-<!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,86 +16,109 @@
 <body>
   <h1>My Resume</h1>
   <header>
-     <nav>
-       <a href="#">Home</a>
-       <a href="#">About</a>
-       <a href="#">Work</a>
-       <a href="#">Contact</a>
-     </nav>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
-  <main>
-    <section class="about">
-      <img src="img/mhmusa.JPG" alt="">
-      <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
 
-    </section>
-    <section class="work">
-      <div class="skill">
+  <section class="top-section">
+    <img src="img/mhmusa.JPG">
+
+    <div class="top-intro">
+
+      <hr>
+
+      <h1>Mosharraf Musa</h1>
+      <h2>Full Stack Web Developer</h2>
+      <p>I'm a highly adaptable team player whose passion is coding! I have been involved in multiple successful start-ups and am looking for more like-minded individuals to work with on new projects!</p>
+      <a href="#"><button>Let's team up!</button></a>
+
+      <hr>
+
+    </div>
+  </section>
+
+  <section class="bottom-section">
+    <div class="story">
+      <h2>My story!</h2>
+      <p>My career in the technology field started off at Per Scholas, a two month long bootcamp that prepared me for the CompTIA A+ Certification. I went on to pass the CompTIA Network+ and Security+ Certifications as well. This career path led me to learn a little about domains and websites in passing, and from that moment forward I was HOOKED. I enrolled in Lambda School and in the course of 18 months I learned all the languages, from front-end to back-end.</p>
+    </div>
+    <div class="skills">
+      <h2>My skills!</h2>
         <ul>
+          <li>HTML/CSS</li>
+          <li>LESS</li>
           <li>Javascript</li>
-          <li>Node.js</li>
           <li>React/Redux</li>
+          <li>Node.js</li>
           <li>Express</li>
         </ul>
-      </div>
-       <div class="experience">
-          <div class="exp1">
-            <h4>Senior Developer</h4>
-            <h6>Jun 19 - Present</h6>
-            <p>Many desktop publishing packages and web page 
-              editors now use Lorem Ipsum as their default model text, 
-              and a search for 'lorem ipsum' will uncover many web
-               sites still in their infancy. Various versions have
-            </p>
-          </div>
+    </div>
+    <div class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        Name:<br>
+        <input type="text"><br>
+        <br>
+        Email:<br>
+        <input type="text"><br>
+        <br>
+        Phone:<br>
+        <input type="number"><br>
+        <br>
+        What type of skill are you needing for your business?<br>
+        <select>
+          <option>HTML/CSS</option>
+          <option>LESS</option>
+          <option>Javascript</option>
+          <option>React/Redux</option>
+          <option>Node.js</option>
+          <option>Express</option>
+        </select>
+      </form>
+    </div>
+  </section>
 
-          <div class="exp1">
-            <h4>Senior Developer</h4>
-            <h6>Jun 19 - Present</h6>
-            <p>Many desktop publishing packages and web page 
-              editors now use Lorem Ipsum as their default model text, 
-              and a search for 'lorem ipsum' will uncover many web
-               sites still in their infancy. Various versions have
-            </p>
-          </div>
 
-          <div class="exp1">
-            <h4>Senior Developer</h4>
-            <h6>Jun 19 - Present</h6>
-            <p>Many desktop publishing packages and web page 
-              editors now use Lorem Ipsum as their default model text, 
-              and a search for 'lorem ipsum' will uncover many web
-               sites still in their infancy. Various versions have
-            </p>
-          </div>
-       </div>
-    </section>
+  <section class="history">
+    <h2>Work History</h2>
+    <table>
+      <th>Years</th>
+      <th>Company Name</th>
+      <th>Job Title</th>
+      <th>Skill Used</th>
+      <tr>
+        <td>2</td>
+        <td>Tri-Health</td>
+        <td>Senior Developer</td>
+        <td>JS, Node</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>PayCor</td>
+        <td>Front-End Web Dev</td>
+        <td>HTML, CSS, JS</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Amazon</td>
+        <td>Developer</td>
+        <td>Node, Express</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>CyberCoders</td>
+        <td>Full Stack</td>
+        <td>JS, Express, React</td>
+      </tr>
+    </table>
+  </section>
 
-    <section class="contact">
-      <div class="professional">
-        <h3>Professional Contact</h3>
-        <ul>
-          <li>mosharrafny@gmail.com</li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </div>
-
-      <div class="social">
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-
-      </div>
-     
-    </section>
-  </main>
-  <footer>
-    <p>mosharrafmusa</p>
-  </footer>
-
+  <section class="copyright">
+    <p>Copyright&copy; of Mosharraf Musa 2020</p>
+  </section>
 </body>
-</html>
+</html> 
